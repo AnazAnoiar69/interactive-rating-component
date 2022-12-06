@@ -10,7 +10,7 @@ function Ratings() {
   const [data, setData] = useState(5);
 
   return (
-    <div className="sm:w-3/4 md:w-2/4 lg:w-1/3 xl:w-1/4 xl:p-8 bg-top bg-gradient-to-t from-gray-900 to-gray-800 rounded-3xl flex flex-col text-white">
+    <div className="sm:w-3/4 md:w-2/4 lg:w-2/5 xl:w-1/3 p-2 sm:p-8 bg-top bg-gradient-to-t from-gray-900 to-gray-800 rounded-3xl flex flex-col text-white">
       <RateContext.Provider value={[isDone, setisDone, data, setData]}>
         {!isDone ? <RatingsContainer1 /> : <RatingsContainer2 />}
       </RateContext.Provider>
